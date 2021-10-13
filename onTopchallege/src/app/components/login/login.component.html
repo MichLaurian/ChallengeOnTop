@@ -1,0 +1,35 @@
+<div class="body">
+  <div class="login">
+
+    <form [formGroup]="form" (ngSubmit)="ingresar()">
+      <img src="../../../assets//images//login.png" width="40%">
+    <h1>Login</h1>
+    <mat-form-field class="ancho" appearance="fill">
+        <mat-label>User</mat-label>
+        <input matInput  formControlName="user" >
+        
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field> 
+      <br/>
+      <button mat-button class="button" type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- formularios , template reven forms
+
+reactive forms
+
+-->
+
+<!-- -------   TWO-WAY BINDING  -------------- 
+
+  OTORGA A LOS COMPONENTES UN CAMINO A DE COMPARTIR DATA, TWO WAY BINDING SE USA PARA ESCUCHARLO VALORES , EVENTOS Y UPDATES SIMULTANIAMENTE ENTRE COMPONENTES PADRES E HIJOS
+  entren el componente y la vista
+
+-->
+
+
